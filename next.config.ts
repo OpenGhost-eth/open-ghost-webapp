@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Static export: emit HTML/CSS/JS into `out/` so the site can be pinned to
+  // IPFS (Fleek, Pinata) without a Node runtime. trailingSlash makes each
+  // route a directory with index.html, which subdomain gateways serve cleanly.
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
   turbopack: {
     root: __dirname,
   },

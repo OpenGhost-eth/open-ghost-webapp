@@ -77,9 +77,6 @@ export default function DemoPage() {
           <Link className="text-white" href="/demo">
             Demo
           </Link>
-          <Link className="transition hover:text-white" href="/downloads">
-            Downloads
-          </Link>
         </nav>
       </header>
 
@@ -111,12 +108,6 @@ export default function DemoPage() {
           <div className="flex gap-6">
             <Link className="transition hover:text-neutral-300" href="/">
               Home
-            </Link>
-            <Link
-              className="transition hover:text-neutral-300"
-              href="/downloads"
-            >
-              Downloads
             </Link>
           </div>
         </div>

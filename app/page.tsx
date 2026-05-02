@@ -11,9 +11,6 @@ export default function Home() {
           <Link className="transition hover:text-white" href="/demo">
             Demo
           </Link>
-          <Link className="transition hover:text-white" href="/downloads">
-            Downloads
-          </Link>
         </nav>
       </header>
 
@@ -36,12 +33,6 @@ export default function Home() {
             className="inline-flex items-center bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:bg-neutral-200"
           >
             Try the demo →
-          </Link>
-          <Link
-            href="/downloads"
-            className="inline-flex items-center border border-neutral-700 px-5 py-2.5 text-sm font-medium transition hover:border-neutral-500 hover:text-white"
-          >
-            Downloads
           </Link>
         </div>
       </section>
@@ -137,12 +128,6 @@ export default function Home() {
           <div className="flex gap-6">
             <Link className="transition hover:text-neutral-300" href="/demo">
               Demo
-            </Link>
-            <Link
-              className="transition hover:text-neutral-300"
-              href="/downloads"
-            >
-              Downloads
             </Link>
           </div>
         </div>
