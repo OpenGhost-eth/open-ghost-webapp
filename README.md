@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# open-ghost-webapp
 
-## Getting Started
+Public-facing web app for the OpenGhost project.
 
-First, run the development server:
+## Pages
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Landing** — what OpenGhost is, the high-level pitch.
+2. **Demo** — interactive reference implementation. A user creates, manages, and accesses a cloud-stored secret protected by a password (passkey support to follow).
+3. **Downloads** — links to the GitHub repositories with a short description of each part of the project (contracts, SDK, CLI, MCP server, etc.).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js (App Router) + TypeScript
+- Wallet / chain interaction via wagmi + viem
+- Zama fhEVM client library for FHE encryption on the demo page
+- WebAuthn (passkeys) — planned, not in the initial cut
 
-## Learn More
+## Status
 
-To learn more about Next.js, take a look at the following resources:
+Not yet scaffolded. This directory currently contains only planning docs.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To be filled in once the app is scaffolded. The site targets Sepolia and talks to the live `GhostGate` stack documented in `../open-ghost-contracts/CLAUDE.md`.
